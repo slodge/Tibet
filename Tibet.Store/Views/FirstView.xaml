@@ -1,0 +1,24 @@
+<views:MvxStorePage
+    x:Class="Tibet.Store.Views.FirstView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:Cirrious.MvvmCross.WindowsStore.Views" xmlns:mvx="using:mvx"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBox Text="{Binding Hello, Mode=TwoWay}" FontSize="45" />
+            <TextBox Text="{Binding Counter, Mode=TwoWay}" FontSize="45" />
+            <TextBlock
+                FontSize="45"
+                mvx:Bi.nd="Text Salutation(Counter + Length(Hello)) + ' ' + Hello"
+                 />
+            <TextBlock 
+                
+    mvx:Bi.nd="Text 'http://placekitten.com/' + Counter + '/' + Counter; FontSize Counter"
+                ></TextBlock>            
+        </StackPanel>
+    </Grid>
+</views:MvxStorePage>
